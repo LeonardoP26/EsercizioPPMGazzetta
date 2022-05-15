@@ -46,7 +46,7 @@ article {
   background-color: #fff;
 }
 
-header ul {
+#footer ul, header ul {
   list-style-type: none;
 }
 
@@ -453,6 +453,54 @@ header ul {
   padding-bottom: 16px;
 }
 
+#footer {
+  position: relative;
+  background-color: #4d4d4d;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: white;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#footer .contenitore {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.footer-info {
+  margin-bottom: 16px;
+}
+
+.footer-menu li{
+  display: inline-block;
+}
+
+.footer-menu li+li a {
+  margin-left: 5px;
+  padding-left: 4px;
+  border-left: 1px solid #fff;
+}
+
+.footer-menu li a:hover {
+  text-decoration: underline;
+}
+
+.footer-indirizzo {
+  margin-top: 16px;
+}
+
+.footer-copyright {
+  border-top: 1px solid #fff;
+  padding-top: 16px;
+}
 
 
 
@@ -544,8 +592,8 @@ header ul {
 
   .articoli {
     flex-grow: 1;
-    flex-basis: 66.66666667%;
-    max-width: 66.66666667%;
+    flex-basis: 66.66%;
+    max-width: 66.66%;
   }
 
 
@@ -559,16 +607,12 @@ header ul {
     position: relative;
   }
 
-
-
-
   .titolo-articoli {
     font-size: 20px;
     margin-bottom: 18px;
     margin-left: 16px;
     margin-right: 16px;
   }
-
 
   .griglia-articoli {
     display: flex;
@@ -595,12 +639,26 @@ header ul {
     font-size: 28px;
   }
 
-
-
-
   .fine-griglia {
     text-align: right;
   }
+
+  .footer-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-logo {
+    margin-right: 20px;
+  }
+
+  .footer-menu li+li a {
+    margin-left: 10px;
+    padding-left: 9px;
+  }
+  
+
+
 
 }
 
@@ -661,7 +719,26 @@ header ul {
     font-size: 22px;
   }
 
+  .footer-logo {
+    margin-right: 40px;
+  }
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -705,6 +782,9 @@ header ul {
   }
 
 
+  .footer-logo {
+    margin-bottom: 16px;
+  }
 
 
 
