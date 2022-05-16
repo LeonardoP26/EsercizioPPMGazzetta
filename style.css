@@ -626,7 +626,7 @@ article {
     padding-right: 16px;
   }
 
-  .griglia-item:first-child {
+  .griglia-item.primo-articolo {
     flex-basis: 100%;
     max-width: 100%;
   }
@@ -635,7 +635,7 @@ article {
     font-size: 18px;
   }
 
-  .griglia-item:first-child .titolo-articolo {
+  .griglia-item.primo-articolo .titolo-articolo {
     font-size: 28px;
   }
 
@@ -699,16 +699,16 @@ article {
   }
 
 
-  .griglia-item:first-child .articolo {
+  .griglia-item.primo-articolo .articolo {
     display: flex;
     margin-bottom: 32px;
   }
 
-  .griglia-item:first-child img {
+  .griglia-item.primo-articolo img {
     flex-basis: 50%;
   }
 
-  .griglia-item:first-child .contenuto-articolo {
+  .griglia-item.primo-articolo .contenuto-articolo {
     flex-basis: 50%;
     padding-left: 16px;
     top: 0;
