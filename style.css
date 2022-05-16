@@ -38,6 +38,10 @@ article {
   display: block;
 }
 
+
+
+
+
 /*-------------MAIN PAGE-------------*/
 #mainpage {
   max-width: 996px;
@@ -46,7 +50,8 @@ article {
   background-color: #fff;
 }
 
-#footer ul, header ul {
+#footer ul,
+header ul {
   list-style-type: none;
 }
 
@@ -111,6 +116,13 @@ article {
   width: 65px;
   height: 38px;
 }
+
+
+
+
+
+
+
 
 /*-------------Mid Header-------------*/
 
@@ -243,6 +255,10 @@ article {
   color: black;
 }
 
+
+
+
+
 /*-------------Bottom Header-------------*/
 #bottom-header {
   display: none;
@@ -271,6 +287,13 @@ article {
 #bottom-header nav>ul>li>a:hover {
   color: black;
 }
+
+
+
+
+
+
+
 
 
 
@@ -313,7 +336,6 @@ article {
   background: #4297b5;
 }
 
-
 #header-action #admin-toggle {
   position: absolute;
   top: 50px;
@@ -326,8 +348,12 @@ article {
 
 
 
-/*-------------MAIN CONTENT- ARTICOLI E SIDEBAR-------------*/
 
+
+
+
+
+/*-------------MAIN CONTENT- ARTICOLI E SIDEBAR-------------*/
 
 .main-content {
   margin-top: 20px;
@@ -408,7 +434,6 @@ article {
   background-color: #f4f4f4;
   padding-bottom: 24px;
 }
-
 
 .sidebar ul li a {
   list-style-type: circle;
@@ -493,7 +518,7 @@ article {
   margin-bottom: 16px;
 }
 
-.footer-menu li{
+.footer-menu li {
   display: inline-block;
 }
 
@@ -670,12 +695,11 @@ article {
     margin-left: 10px;
     padding-left: 9px;
   }
-  
+
 
 
 
 }
-
 
 
 
@@ -740,14 +764,6 @@ article {
 
 
 }
-
-
-
-
-
-
-
-
 
 
 
