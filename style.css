@@ -326,7 +326,7 @@ article {
 
 
 
-/*-------------MAIN-------------*/
+/*-------------MAIN CONTENT- ARTICOLI E SIDEBAR-------------*/
 
 
 .main-content {
@@ -450,8 +450,22 @@ article {
   max-width: 100%;
   text-align: center;
   padding-top: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 26px;
 }
+
+
+.immagine-articolo {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+/*-------------FOOTER-------------*/
 
 #footer {
   position: relative;
@@ -501,7 +515,6 @@ article {
   border-top: 1px solid #fff;
   padding-top: 16px;
 }
-
 
 
 
@@ -641,6 +654,7 @@ article {
 
   .fine-griglia {
     text-align: right;
+    margin-left: 16px;
   }
 
   .footer-info {
