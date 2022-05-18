@@ -64,50 +64,13 @@ header ul {
 }
 
 #navbar {
-  display: none;
-  visibility: hidden;
+  display: block;
+  visibility: visible;
   background-color: #4297b5;
   color: #fff;
 }
 
-#navbar ul {
-  overflow: auto;
-  padding-left: 31px;
-  position: relative;
-}
 
-#navbar li {
-  float: left;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-#navbar .nav-item {
-  padding-left: 6px;
-  padding-right: 6px;
-  border-left: 1px solid #61abc5;
-}
-
-#navbar li:first-child .nav-item {
-  border-left: 0;
-}
-
-#navbar a {
-  font-size: 10px;
-  color: white;
-}
-
-#navbar li:hover {
-  background-color: #e8f2f6;
-}
-
-#navbar li:hover .nav-item {
-  border-left: 1px solid #e8f2f6;
-}
-
-#navbar li:hover a {
-  color: black;
-}
 
 #header-slim .logo {
   display: flex;
@@ -299,7 +262,7 @@ header ul {
 
 /*-------------MENU ACTION-------------*/
 
-#header-action #menu-toggle {
+#header-action .menu-toggle {
   position: absolute;
   top: 5px;
   left: 0;
@@ -309,7 +272,7 @@ header ul {
   z-index: 5;
 }
 
-#header-action #menu-toggle span {
+#header-action .menu-toggle span {
   position: absolute;
   top: 50%;
   width: 20px;
@@ -319,16 +282,16 @@ header ul {
   margin-left: -10px;
 }
 
-#header-action #menu-toggle span:before {
+#header-action .menu-toggle span:before {
   top: -6px;
 }
 
-#header-action #menu-toggle span:after {
+#header-action .menu-toggle span:after {
   top: 6px;
 }
 
-#header-action #menu-toggle span:before,
-#header-action #menu-toggle span:after {
+#header-action .menu-toggle span:before,
+#header-action .menu-toggle span:after {
   content: "";
   position: absolute;
   width: 20px;
@@ -568,8 +531,10 @@ header ul {
 
 /*-------------MEDIA QUERY-------------*/
 @media screen and (min-width: 768px) {
+
+
   #navbar {
-    display: flex;
+    display: block;
     visibility: visible;
   }
 
@@ -606,16 +571,16 @@ header ul {
   }
 
 
-  #header-action #menu-toggle {
+  #header-action .menu-toggle {
     top: -45px;
   }
 
-  #header-action #menu-toggle span {
+  #header-action .menu-toggle span {
     background: white;
   }
 
-  #header-action #menu-toggle span:before,
-  #header-action #menu-toggle span:after {
+  #header-action .menu-toggle span:before,
+  #header-action .menu-toggle span:after {
     background: white;
   }
 
@@ -696,7 +661,45 @@ header ul {
     padding-left: 9px;
   }
 
-
+  .menu-primario {
+    overflow: auto;
+    padding-left: 31px;
+    position: relative;
+  }
+  
+  .menu-primario li {
+    float: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  
+  .menu-primario .nav-item {
+    padding-left: 6px;
+    padding-right: 6px;
+    border-left: 1px solid #61abc5;
+  }
+  
+  .menu-primario li:first-child .nav-item {
+    border-left: 0;
+  }
+  
+  .menu-primario a {
+    font-size: 10px;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .menu-primario li:hover {
+    background-color: #e8f2f6;
+  }
+  
+  .menu-primario li:hover .nav-item {
+    border-left: 1px solid #e8f2f6;
+  }
+  
+  .menu-primario li:hover a {
+    color: black;
+  }
 
 
 }
@@ -772,21 +775,71 @@ header ul {
 
 
 @media screen and (max-width: 768px) {
+
+  .menu-primario {
+    display: none;
+  }
+  
+
+  .menu-toggle {
+    display: block;
+  }
+
+
+  #header-slim{
+    float: none;
+    flex-direction: column-reverse;
+  }
+
+  .menu-primario.menu-mobile {
+    display: block;
+    background-color: white;
+    padding-top: 70px;
+    margin-bottom: -50px;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.menu-primario.menu-mobile li {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.menu-primario.menu-mobile .nav-item {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+.menu-primario.menu-mobile a {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.menu-primario.menu-mobile li:not(:first-child) {
+border-top: 1px solid #efefef;
+}
+
   #mid-header1 {
     margin-top: 15px;
   }
 
   #mid-header1 .titolo {
     text-align: center;
-    float: none;
+    position: absolute;
+    top: 50px;
+    left: 20%;
+    right: 20%;
   }
 
   #member-menu {
     float: left;
-    padding-top: 16px;
+    padding-top: 60px;
   }
 
-  #header-action #menu-toggle {
+  #header-action .menu-toggle {
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -811,6 +864,13 @@ header ul {
     font-size: 22px;
   }
 
+  .griglia-item:not(:first-child) .immagine-articolo {
+    display: none;
+  }
+
+  .griglia-item:not(:first-child) {
+    border-top: 1px solid #e2e2e2;
+  }
 
   .footer-logo {
     margin-bottom: 16px;
