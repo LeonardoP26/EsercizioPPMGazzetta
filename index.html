@@ -7,13 +7,26 @@
     <title>Gazzetta di Mantova</title>
     <link rel="stylesheet" href="./style.css" />
     <title>Gazzetta di Mantova</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $(".menu-toggle").on("click", function() {
+                $(this).toggleClass("on");
+                $("#menu-primario").toggleClass(".menu-mobile");
+                return false;
+          });
+      });
+  </script>
+
+
   </head>
   <body>
     <div id="mainpage">
       <header>
         <div id="header-slim">
           <nav id="navbar">
-            <ul>
+            <ul id="menu-primario" class="menu-mobile">
               <li>
                 <div class="nav-item"><a href="">CRONACA</a></div>
               </li>
@@ -52,9 +65,9 @@
         </div>
 
         <div id="header-action">
-          <span id="menu-toggle">
+          <a href="#" class="menu-toggle">
             <span></span>
-          </span>
+          </a>
           <span id="admin-toggle">
             <img src="https://via.placeholder.com/32x32" alt="" />
           </span>
